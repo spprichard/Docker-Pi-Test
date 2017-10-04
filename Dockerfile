@@ -1,4 +1,6 @@
-FROM resin/rpi-raspbian:latest  
+FROM resin/rpi-raspbian:latest 
+
+# the Resin image has a pre-defined start-up instruction so this line cancels that out allow us to use our own. 
 ENTRYPOINT []
 
 RUN apt-get update && \  
